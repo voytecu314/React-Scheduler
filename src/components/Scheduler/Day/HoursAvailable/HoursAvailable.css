@@ -1,0 +1,13 @@
+.hours-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    gap: 10px;
+}
+
+.hour {
+    padding: 3px;
+    border: 1px solid aliceblue;
+    border-radius: 8px;
+    cursor: pointer;
+}

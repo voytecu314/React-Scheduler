@@ -1,0 +1,12 @@
+.day {
+    flex-basis: 35px;
+    overflow: hidden;
+    border: 1px dashed grey;
+    transition: all .2s ease-out;
+}
+
+.day:has(.expander:checked) {
+    background-color: rgb(183, 177, 177);
+    flex-basis: unset;
+}
+

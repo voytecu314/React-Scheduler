@@ -1,0 +1,30 @@
+.dayTitle {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.dayTitle > span {
+    flex-basis: 50%;
+}
+
+label:has(.expander) {
+    flex-basis: 20%;
+    height: 20px;
+    text-align: center;
+}
+
+.expander {
+    display: none;
+}
+
+#chevron {
+    display: inline-block;
+    font-size: larger;
+    transform: rotate(-90deg);
+    cursor: pointer;
+}
+
+.day:has(.expander:checked) .dayTitle {
+    font-weight: bold;
+}
