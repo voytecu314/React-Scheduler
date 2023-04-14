@@ -1,12 +1,15 @@
 .day {
     flex-basis: 35px;
     overflow: hidden;
-    border: 1px dashed grey;
     transition: all .2s ease-out;
 }
 
+.day:not(:last-child) {
+    border-bottom: 1px solid grey;
+}
+
 .day:has(.expander:checked) {
-    background-color: rgb(183, 177, 177);
+    background-color: rgb(237, 227, 227);
     flex-basis: unset;
 }
 

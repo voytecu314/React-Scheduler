@@ -18,13 +18,13 @@ label:has(.expander) {
     display: none;
 }
 
-#chevron {
+.chevron {
     display: inline-block;
     font-size: larger;
     transform: rotate(-90deg);
     cursor: pointer;
 }
 
-.day:has(.expander:checked) .dayTitle {
+.dayTitle:has(.expander:checked) {
     font-weight: bold;
 }

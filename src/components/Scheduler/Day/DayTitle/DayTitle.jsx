@@ -13,7 +13,7 @@ const DayTitle = ({dayName,date}) => {
                     {dayName+", "+dateFormated}
                 </span>
                 <label htmlFor={"expander"+dateFormated}>
-                    <span id="chevron">{checked?"\u203A":"\u2039"}</span> 
+                    <span className="chevron">{checked?"\u203A":"\u2039"}</span> 
                     <input 
                         onChange={()=>setChecked(!checked)}
                         type="checkbox" 
