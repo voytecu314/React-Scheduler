@@ -5,7 +5,7 @@
 }
 
 .day:not(:last-child) {
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid black;
 }
 
 .day:has(.expander:checked) {

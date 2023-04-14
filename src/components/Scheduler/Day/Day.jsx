@@ -1,14 +1,10 @@
 import './Day.css';
 import DayTitle from './DayTitle/DayTitle';
 import HoursAvailable from './HoursAvailable/HoursAvailable';
-import { checkIfFirefox } from './HelperFunction/checkFirefox.js';
-
-const Day = ({dayName, date, times}) => {
-
-    checkIfFirefox();
+const Day = ({dayName, date, times, isFirefox}) => {
 
     return <div className="day"> 
-                <DayTitle dayName={dayName} date={date}/>
+                <DayTitle dayName={dayName} date={date} isFirefox={isFirefox}/>
                 <HoursAvailable times={times} />
             </div>
 }
